@@ -30,7 +30,7 @@
  */
 + (UIImage *)imageWithColor:(UIColor *)color text:(NSString *)name;
 
-//对图片进行模糊处理
+//对图片进行模糊处理  参考值25.0
 + (UIImage *)gaussianBlurImage:(UIImage *)image andInputRadius:(CGFloat)radius;
 
 /// 由颜色生成模糊图片

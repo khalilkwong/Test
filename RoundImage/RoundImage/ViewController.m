@@ -11,6 +11,7 @@
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *imageV;
+@property (weak, nonatomic) IBOutlet UIImageView *imageV2;
 
 @end
 
@@ -21,6 +22,8 @@
     UIImage *image = [UIImage imageNamed:@"0308"];
     image = [image roundImage];
     self.imageV.image = image;
+    self.imageV2.image = [UIImage gaussianBlurImage:image andInputRadius:25.0];
+    
 }
 
 
